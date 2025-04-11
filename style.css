@@ -1,0 +1,1117 @@
+body{
+    font-family:"Inter" ;
+}
+.c1{
+    height:max-content;
+    padding-bottom: 4%;
+    background: #000;
+    color: white;
+    background-image: url(Images/home.webp);
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+.custom-navbar {
+  background-color: transparent;
+  margin: 0 8rem;
+  padding: 1rem 0;
+  border-bottom: rgba(245, 245, 245, 0.491) .75px solid;
+  margin-bottom: 8%;
+}
+
+.custom-navbar .nav-link {
+  color:rgba(245, 245, 245, 0.79);
+  transition: color 0.3s ease;
+  margin-right: 20px;
+}
+
+.custom-navbar .nav-link:hover {
+  color:white;
+  transform: scale(1.02);
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* makes the icon white */
+}
+.c1>.container>.row>.col-lg-6>h1>b{
+font-weight: 800;
+}
+.c1>.container>.row>.col-lg-6>h1>b>span{
+    color: red;
+}
+.c1>.container>.row>.col-lg-6>p{
+    max-width: 350px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.c1>.container>.row>.col-lg-6>pre{
+    transform: translateY(-20px);
+    font-family: "Inter";
+    transform: translateX(20px);
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.benefit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefit-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s ease;
+  font-size: small;
+  line-height: 8px;
+}
+
+.benefit-list li i {
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s ease;
+}
+
+.benefit-list li:hover,
+.benefit-list li:hover i {
+  color: #fff;
+}
+ .btnc1{
+    display: grid;
+    padding-top: 12px;
+    place-items: center;
+
+    background-color: red;
+    padding-left: 50px;
+    padding-right: 50px;
+
+ }
+
+ .btnc7{
+  display: grid;
+  padding-top: 12px;
+  place-items: center;
+
+  background-color: red;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+ /* >>>>>>>> */
+ .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  text-align: center;
+  background: rgb(91, 8, 8);
+  padding: 1.2% 10%;
+}
+
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+  
+}
+
+.feature-item img {
+  height: 20px;
+  width: auto;
+}
+.smallbox{
+    display:none;
+}
+.accordion{
+    display: none;
+}
+ /* Remove borders and background for the accordion items */
+.accordion .accordion-item {
+    border: none;
+  }
+  
+  /* Remove the default arrow icon */
+  .accordion-button::after {
+    display: none;
+  }
+  
+  /* Style the accordion button */
+  .accordion-button {
+    height: 85px;
+    font-size: 1.5rem; /* Increase font size */
+    position: relative;
+    background-color: transparent; /* Remove background */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove any shadow */
+    display: flex; /* Flexbox for aligning image and text */
+    align-items: center;
+    padding-left: 0; /* Remove default padding */
+    border: .2px solid rgba(0, 0, 0, 0.233);
+    margin-bottom: 6px;
+    border-radius: 12px;
+  }
+  
+  /* Remove focus outline */
+  .accordion-button:focus {
+    box-shadow: none; 
+    outline: none;
+    background-color: transparent;
+  }
+  
+  /* Custom icons for collapsed and expanded states */
+  .accordion-button.collapsed::before {
+    content: "+"; 
+    position: absolute;
+    right: 20px;
+    font-size: 2rem; /* Larger + icon */
+  }
+  
+  .accordion-button:not(.collapsed)::before {
+    content: "-"; 
+    position: absolute;
+    right: 20px;
+    font-size: 2rem; /* Larger - icon */
+  }
+  
+  /* Style for the images */
+  .accordion-img {
+    width: 80px; /* Adjust the size of the image */
+
+    height: 100%; /* Maintain aspect ratio */
+   
+    margin-right: 10px; /* Space between the image and text */
+    border-radius: 0px; /* Optional: Add rounded corners to images */
+    position: absolute;
+    left: 0; /* Align the image to the left */
+    top: 10px;
+    border-top-left-radius: 12px;
+    
+    border-bottom-left-radius: 12px;
+  }
+  
+  
+  /* Style for the heading */
+  .accordion-button h2 {
+    margin: 0; /* Remove default margin */
+    font-weight: normal; /* Ensure bold only for <b> */
+    font-size: large;
+    padding-left: 90px; /* Create space for the image */
+  }
+  
+  .accordion-button b {
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  /* Ensure there's no border around the accordion button when focused */
+  .accordion-button.collapsed {
+    background-color: transparent !important; 
+  }
+  
+  .accordion-body {
+    padding-left: 120px; /* Create space for the image */
+    border: 0.2px solid rgba(0, 0, 0, 0.299);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin-bottom: 8px;
+  }
+  
+  /* Adjust the text and list styling */
+  .acctext {
+    list-style-type: none; /* Remove default list style */
+    padding-left: 0; /* Remove left padding */
+  }
+  
+  /* List items with checkmarks */
+  .acctext li {
+    font-size: 1.1rem; /* Adjust font size */
+    margin-bottom: 10px; /* Space between list items */
+    display: flex; /* Use flexbox to align the check mark and text */
+    align-items: flex-start; /* Align checkmark at the top */
+    transform: translateX(-95px); /* Adjust position of the list item */
+    margin-top: 6px; /* Add 6px top margin */
+  }
+  
+  /* Style for the checkmark icon */
+  .acctext li i {
+    color: red; /* Set the checkmark color to red */
+    margin-right: 10px; /* Space between the check mark and text */
+    font-size: 1.5rem; /* Adjust icon size */
+    vertical-align: top; /* Align checkmark to the top of the text */
+  }
+  
+  .c3 .row .col-lg-6 h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+
+}
+.c3 .row .col-lg-6 p{
+    font-size: large;
+    max-width: 580px;
+}
+.c3>.row>.col2{
+    padding: 1%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+  .c3 .col-lg-6 img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the container without stretching */
+  }
+  
+  .no-list-style {
+    list-style-type: none; /* Removes default list style */
+    padding-left: 0; /* Removes any default padding */
+
+}
+
+.no-list-style li {
+    font-size: 1.2rem; /* Adjust font size */
+    line-height: 1.8; /* Space between lines */
+    margin-bottom: 10px; /* Space between list items */
+    display: flex; /* Align the checkmark and text in a row */
+    align-items: center; /* Vertically center the checkmark and text */
+    line-height: 12px;
+}
+#smallh1{
+    display: none;
+}
+/* For medium screens (max-width: 992px) */
+@media (max-width: 992px) {
+    .no-list-style li {
+        line-height: 16px; /* Adjust line-height for medium screens */
+    }
+}
+
+/* For small screens (max-width: 576px) */
+@media (max-width: 576px) {
+    .no-list-style li {
+        line-height: 19px; /* Adjust line-height for small screens */
+    }
+    #largeh1{
+        display: none;
+    }
+    #smallh1{
+        display: block;
+        font-family: 'Inter';
+        font-weight: 900;
+       margin-bottom:30px;
+       text-align: center;
+    }
+    .c3 .col-lg-6 img {
+        margin-bottom: 10px;
+    }
+
+    .c4 .col-lg-6 img{
+        margin-bottom: 10px;
+
+    }
+}
+
+.no-list-style li::before {
+    content: ""; /* Custom checkmark */
+    font-size: 1.5rem; /* Adjust the size of the checkmark */
+    margin-right: 10px; /* Space between checkmark and text */
+}
+.c4>.row>.col-lg-6>img{
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the container without stretching */
+}
+.c4>.row>.col-lg-6>h1{
+    font-family: 'Inter';
+    font-weight: 900;
+   margin-bottom:30px;
+}
+.c4>.row>.col-lg-6>ul>li{
+    font-size: large;
+}
+.c4>.row>.col-lg-6>p{
+    font-size: large;
+}
+
+@media(max-width:768px)
+{
+    .c1{
+        background-image: url(Images/mobile\ home.jpeg);
+    }
+}
+
+.c2>.row>center>h1>b{
+    
+    color: black;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-weight: 800; /* Thicker weight */
+
+}
+.c2>.row>center>h1>b>span{
+    color: red;
+}
+.c2>.r2{
+ display: flex;
+ flex-wrap:wrap;
+}
+
+/* >>>>>>>> */
+.card {
+    border-radius: 12px;
+    overflow: hidden; /* Ensures image and text stay within rounded corners */
+    margin-bottom: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures image doesn't stretch */
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  /* Ensure responsive layout */
+ 
+
+/* Custom padding for container */
+.custom-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .card-body {
+    height: 320px;
+  }
+  
+  /* Styling for the list with red checkmark */
+  .card-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .card-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;  /* Align the items to the start */
+  }
+  
+  .card-title > b {
+    font-family: 'Inter';
+    font-weight: 900;
+  }
+  
+  .card-list li i {
+    color: rgb(229, 41, 41);
+    margin-right: 10px;  /* Space between checkmark and text */
+    vertical-align: top;  /* Align checkmark at the top */
+    transform: translateY(6px);
+  }
+  
+  
+  
+
+
+.c5 >.row> .col-lg-6> h1{
+    font-family: 'Inter';
+    font-weight: 900;
+}
+.c5 >.row> .col-lg-6>img{
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the container without stretching */
+}
+.c5 >.row> .col-lg-6>p{
+    font-size: large;
+}
+.c5 >.row> .col-lg-6>ul{
+    font-size: large;
+
+}
+
+.c6 {
+    height: max-content;
+    padding: 1%;
+    justify-content: center;
+    background: #000;
+    border-radius: 19px 19px 0px 0px;
+    padding-bottom: 40px;
+    width: 100%;
+    background-image: linear-gradient(90deg, #480000FF 0%, #1B1B1BFF 100.50%);
+    display: flex;
+    justify-content: center; /* Ensures the content is centered */
+}
+.c6>center>h1{
+    font-family: 'Inter';
+    font-weight: 900;
+    color: white;
+}
+.row {
+    width: 100%; /* Ensures the row takes full width of the parent (.c6) */
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+}
+
+.col-lg-3 {
+    border: 1px solid white;
+    max-width: 450px; /* Ensures the card doesn't exceed 450px */
+    flex: 1 1 100%; /* Ensures columns take up full width but are responsive */
+    margin: 0 10px; /* Optional, adds some space between cards */
+}
+
+.custom-card {
+    overflow: hidden;
+    position: relative;
+    height: 670px;
+}
+
+.custom-card .card-img-top {
+    height: 50%; /* Half of the card */
+    object-fit: cover;
+    width: 100%;
+}
+
+.custom-card .card-body {
+    height: 100%;
+    padding: 1rem;
+    overflow: auto;
+}
+
+  
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      position: absolute;
+       overflow: hidden;
+      top: 80px;
+      right: -100px;
+      color: white;
+      width: 250px; /* Adjust width as needed */
+      height: 100vh; /* Full height of the screen */
+      background-color: transparent; /* No background color */
+      box-shadow: none; /* No shadow */
+      transform: translateX(100%); /* Initially off-screen to the right */
+      opacity: 0; /* Initially invisible */
+      transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for both transform and opacity */
+    }
+
+    .navbar-collapse.show {
+      transform: translateX(0); /* When toggled, just appear from the right */
+      opacity: 1; /* Fade in when visible */
+    }
+
+    .navbar-toggler {
+      z-index: 1050; /* Ensure the toggler is above other elements */
+    }
+   
+  }      
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    height: 55px;
+    background: rgb(37, 24, 24);
+    box-sizing: border-box;
+    transform: translateY(-12px) translateX(-8px);
+    border-radius: 0px 0px 19px 19px;
+    border-top: 0.4px solid whitesmoke;
+  }
+
+  .slider > .track > .item > img {
+    width: 100%;      /* Make the image responsive */
+    height: auto;     /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the container without stretching */
+  }
+
+  .track {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+    gap: 70px; /* 40px space between items */
+  }
+
+  .item {
+    background: #291d1d;
+    width: 300px;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    flex-shrink: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1700px); /* 5 items * (300px + 40px gap) */
+    }
+  }
+    /* Updated width for .owlcard */
+    .owl-item .owlcard {
+      width: 440px; /* Set width to 450px */
+      height: 665px; /* You can adjust the height based on your needs */
+      background-color: #ddd; /* Example background color */
+      margin: 0 10px; /* Add space between cards */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      overflow: hidden;
+      padding-top: 0px;
+    }
+    .owl-item .owlcard:hover{
+      transition-duration:0.7s ;
+      transform: scale(1.03);
+    }
+    .owl-item {
+    background-image: linear-gradient(90deg, #480000FF 0%, #1B1B1BFF 100.50%);
+     padding: 0.5% 0%;
+     padding-bottom: 40px;
+     padding-top:30px ;
+     border: none;
+    }
+    #largecarousel{
+      display: block;
+    }
+    #smallcarousel{
+      display: none;
+    }
+    @media(max-width:565px)
+{
+    .accordion{
+        display: block;
+    }
+    .smallbox{
+        display: block;
+    }
+.custom-navbar {
+  background-color: transparent;
+  margin: 0 0rem;
+  padding: 1rem 0;
+  margin-bottom: 80%;
+
+}
+.bigacco{
+    display: none;
+}
+.feature-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
+gap: 1.5rem;
+justify-items: center;
+text-align: center;
+background: rgb(91, 8, 8);
+padding: 4% 10%;
+}
+.btnc1{
+margin-left: 30px;
+}
+.c1>.container>.row>.col-lg-6>pre{
+    transform: translateY(-20px);
+    font-family: "Inter";
+    transform: translateX(40px);
+}
+
+}
+@media (max-width: 768px) {
+  .col-12.col-md-3 {
+    width: 100%;
+  }
+  #largecarousel{
+    display: none;
+  }
+  #smallcarousel{
+    display: block;
+  }
+  .owl-carousel .owl-dots {
+    text-align: center;
+   transform: translateY(-26px);
+  }
+  
+  .owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    /* background-color: #ddd; */
+    width: 12px;
+    background: rgb(79, 70, 70);
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .owl-carousel .owl-dots .owl-dot.active {
+    background-color: white;
+  }
+  body{
+    overflow-x: hidden !important;
+  }
+  #smallcarouselh1{
+    width: 100%;
+    
+    padding: 0.5% 4%;
+    transform: translateY(9px);
+    background-image: linear-gradient(90deg, #480000FF 0%, #1B1B1BFF 100.50%);
+    padding-bottom: 20px;
+   
+    
+  }
+  #smallcarouselh1>h1{
+    color: white;
+    font-family: 'Inter';
+    font-weight: 800;
+
+  }
+}
+
+.row-layout {
+  display: flex;
+  flex-wrap: wrap;
+   
+  justify-content: space-between;
+  padding: .5% 8%;
+  background: rgb(120, 29, 29);
+
+}
+.smallbox{
+  display: none;
+}
+.row-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.5% 5%; /* reduced horizontal padding */
+  background: rgb(120, 29, 29);
+  gap: 10px; /* add this for better control of spacing between items */
+}
+
+.column-card {
+  display: flex;
+  align-items: center;
+  width: calc(100% / 6 - 20px); /* smaller gap */
+
+  color: white;
+  background: rgb(120, 29, 29);
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 8px 10px; /* add some internal spacing */
+}
+
+
+.column-card img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .column-card {
+    width: calc(100% / 3 - 20px); /* 3 columns */
+  }
+  .smallbox{
+    display: block;
+  }
+  .row-layout {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    padding: 2% 8%;
+    background: rgb(121, 23, 23);
+  }
+
+}
+.c8>.row>center>h1{
+  margin-top: 20px;
+  font-family: 'Inter';
+  font-weight: 900;
+}
+.c8>.row>center>h1>span{
+  color: red;
+}
+.c8>.row>center>p{
+  font-size: large;
+}
+
+.tick-list li {
+  list-style: none;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+.tick-list img {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+}
+.red-border-item {
+  border: 1px solid red;
+  padding: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+.c9{
+  border: 0.5px solid rgba(0, 0, 0, 0.267);
+ padding: 1%;
+ border-radius: 12px;
+}
+/* Tick List Fix: Align tick image to the start */
+.tick-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tick-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.tick-list li img {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* Red Border Items: smaller height, auto width, no wrap */
+.red-border-item {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 4px 10px;
+  margin: 5px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+.c9{
+  margin-bottom: 2px;
+}
+/* Modify <p> tag font size and color */
+.container p {
+  font-size: 1.2rem; /* You can adjust the size as needed */
+  color: #333; /* Darker color for the text */
+}
+
+  /* Modify <p> tag font size and color */
+  .container p {
+    font-size: 1.2rem; /* You can adjust the size as needed */
+    color: #000000; /* Darker color for the text */
+  }
+
+  /* Make list items smaller and lighter in color */
+  .tick-list li {
+    font-size: 0.9rem; /* Adjust list font size */
+    color: #140e0e83; /* Lighter color for the text */
+  }
+
+  /* Adjust image size to match font size */
+  .container img {
+    max-width: 100%; /* Ensures images scale down with the container */
+    height: auto;
+  }
+/* Tick List Fix: Align tick image to the start */
+.tick-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tick-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  font-size: 0.875rem;  /* Slightly smaller text size */
+  color: #333333;  /* Darker text color */
+}
+
+.tick-list li img {
+  margin-right: 6px;  /* Space between image and text */
+  width: 14px;  /* Smaller tick image */
+  height: 14px;
+  flex-shrink: 0;
+}
+.c11{
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+ 
+
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.c10 {
+  margin-top: 40px;
+  background-image: url(Images/result.png.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 89vh;
+  width: 92%;
+  border-radius: 18px;
+}
+
+#imger{
+  background-image: url(Images/initiation.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  margin: 6%;
+}
+.info-panel {
+  width: 350px;
+  height: 350px;
+  border-radius: 6px;
+  padding: 18px;
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-header,
+.info-body,
+.info-footer {
+  flex: 1;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li::before {
+  content: "✔";
+  color: tomato;
+  font-weight: 300;
+  margin-right: 8px;
+}
+.bigscreen{
+  display: block;
+}
+.smallscreen{
+  display: none;
+}
+.c12{
+  background: rgba(0, 0, 0, 0.059);
+}
+#blacklogo{
+  max-height: 60px;
+  width: auto;
+}
+#largeresult{
+  display: block;
+}
+#smallresult{
+  display:none;
+  display: none;
+}
+#smallbig{
+  display: none;
+}
+#small90{
+  display: none;
+}
+#smalldiff{
+  display: none;
+}
+@media(max-width:568px){
+  #largebig{
+    display: none;
+  }
+  #smallbig{
+    display: block;
+  }
+  
+  #h1small{
+    text-align: center;
+  }
+  .container{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .c22{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #smallslide{
+    transform: translateX(-10px);
+  }
+  .c9{
+    transform: translateX(-10px);
+   
+  }
+  .c10{
+    background-image: url(Images/mobile.jpg);
+    width: 100%;
+    border-radius: none;
+  }
+  .c11{
+    border-radius: none;
+
+  }
+  .cctr{
+    text-align: center;
+  }
+  #smallcarousel{
+    margin: none;
+  }
+  .info-panel {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fdfdfd;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    padding: 18px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .info-section {
+    flex: 1;
+  }
+
+  .info-header {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .checklist li::before {
+    content: "✔";
+    color: tomato;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+  .bbttnn{
+    display: none;
+  }
+  .bigscreen{
+    display: none;
+  }
+  .smallscreen{
+    display: block;
+    padding-left: 30px;
+  }
+  .accordion{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #smallp{
+    text-align: center;
+   
+  }
+  .accordion{
+    margin-left: -10px;
+  }
+  
+  #small90{
+    display: block;
+  }
+  #large90{
+    display: none;
+  }
+  #largeresult{
+    display: none;
+  }
+  #smallresult{
+    display: block;
+  }
+   /* Container Custom */
+.c9 {
+  padding: 20px 15px;
+  transform: translateX(0px);
+}
+/* Image Responsive + Centered */
+img.img-fluid {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#large{
+ margin-left:4.5px ;
+
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.full-screen-img {
+  width: 105%;
+  margin-left: 0px;
+  
+  object-fit: cover;
+}
+.section{
+  width: 108%;
+  transform: translateX(-7px);
+}
+/* Heading Centering */
+.cctr {
+  text-align: center;
+}
+
+/* Tick List */
+.tick-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.tick-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.tick-list img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+}
